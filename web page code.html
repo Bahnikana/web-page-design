@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bahnikana-developer portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(18, 18, 48);
+            color: white;
+            font-family: 'armio', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(35, 35, 116);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            font-size: 1.15rem;
+            font-weight: 500;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 90px 0;
+            margin-bottom: 30px;
+            background-color: rgb(235, 4, 4);
+
+        }
+
+        .firstsection>div {
+            width: 50%;
+
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin-left: 60px;
+
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(204, 8, 8);
+            height: 1.2px;
+            margin: 20px 50px;
+        }
+
+        .rightsection img {
+            width: 100%;
+
+
+        }
+
+        .footer ul a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+
+        .footer ul a:hover {
+            color: rgb(183, 214, 7);
+            font-size: 1.05rem;
+        }
+
+        .secondsection {
+            max-width: 85vw;
+            margin-top: 30px;
+            margin-left: 80px;
+            justify-content: center;
+            height: 90vh;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+        }
+
+        .text-gray {
+            color: rgb(145, 145, 216);
+            font-size: small;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: auto;
+            height: 2px;
+            margin: 47px 0;
+            margin-top: 120px;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 100px;
+            width: 1px;
+            background-color: white;
+            margin-left: 100px;
+            margin-right: 70px;
+        }
+
+        .vertical-title {
+            position: relative;
+            left: -48px;
+
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(128, 128, 206);
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 20px;
+            color: rgb(170, 170, 250);
+            width: 150px;
+            left: -60px;
+            font-size: 12px;
+
+
+        }
+
+        .img-top {
+            width: 70px;
+            position: relative;
+            top: -32px;
+            left: -34px;
+        }
+
+        .img-next {
+            position: relative;
+            top: -98px;
+            left: -20px;
+            width: 90px;
+        }
+
+        .vertical-titlenext {
+            position: relative;
+            left: -48px;
+            top: -79px;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(128, 128, 206);
+            width: 150px;
+
+        }
+
+        .vertical-descnext {
+            position: relative;
+            top: -60px;
+            color: rgb(170, 170, 250);
+            width: 150px;
+            left: -60px;
+            font-size: 12px;
+            margin-right: 5px;
+
+        }
+
+        .img-next2 {
+            width: 140px;
+            position: relative;
+            top: -90px;
+            left: -65px;
+        }
+
+        .img-next3 {
+            width: 100px;
+            position: relative;
+            top: -90px;
+            left: -50px;
+        }
+
+        .vertical-titlenext2 {
+            position: relative;
+            left: -48px;
+            top: -47px;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(128, 128, 206);
+            width: 150px;
+        }
+
+        .vertical-descnext2 {
+            position: relative;
+            top: -35px;
+            color: rgb(170, 170, 250);
+            width: 150px;
+            left: -60px;
+            font-size: 12px;
+            margin-right: 5px;
+
+
+        }
+
+        .vertical-titlenext3 {
+            position: relative;
+            left: -48px;
+            top: -34px;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(128, 128, 206);
+            width: 150px;
+        }
+
+        .vertical-descnext3 {
+            position: relative;
+            top: -15px;
+            color: rgb(170, 170, 250);
+            width: 150px;
+            left: -60px;
+            font-size: 12px;
+            margin-right: 5px;
+
+
+        }
+
+        .vertical-titlenext4 {
+            position: relative;
+            left: -48px;
+            top: -23px;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(128, 128, 206);
+            width: 150px;
+        }
+
+        .vertical-descnext4 {
+            position: relative;
+            top: -15px;
+            color: rgb(170, 170, 250);
+            width: 150px;
+            left: -56px;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            height: 200px;
+        }
+
+        .footer>div {
+            width: 150px;
+        }
+
+        .footer {
+            display: flex;
+            margin: 23px 123px;
+            margin-top: 30px;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: rgb(154, 234, 80);
+            font-size: small;
+        }
+
+        .leftsection .button {
+            padding-bottom: 15px;
+            padding-top: 10px;
+        }
+
+        .leftsection .btn {
+            padding: 8px;
+            background: rgb(130, 11, 11);
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-size: medium;
+            cursor: grab;
+        }
+
+        @media screen and (max-width: 950px) {
+            body {
+                background-color: rgb(86, 3, 3);
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+                margin-right: auto;
+            }
+
+            footer {
+                display: none;
+            }
+
+            .rightsection img {
+                width: 80%;
+                margin-left: 30px;
+            }
+
+            .box {
+                flex-direction: column;
+
+            }
+
+            .secondsection .box {
+                width: 50vw;
+            }
+
+            nav {
+                flex-direction: column;
+                background-color: bisque;
+                width: 100%;
+            }
+
+            .secondsection .vertical {
+                height: unset;
+            }
+
+            .secondsection .img-top {
+                display: none;
+            }
+
+            .secondsection .img-next {
+                display: none;
+            }
+
+            .secondsection .img-next2 {
+                display: none;
+            }
+
+            .secondsection .img-next3 {
+                display: none;
+            }
+
+            .secondsection .img-next4 {
+                display: none;
+            }
+
+            .secondsection .vertical-title {
+                margin-top: 30px;
+                padding-top: 10px;
+                padding-left: 60px;
+                padding-bottom: 10px;
+                color: white;
+                background-color: black;
+            }
+
+            .secondsection .vertical-titlenext {
+                margin-top: 120px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 60px;
+                color: white;
+                background-color: black;
+            }
+
+            .secondsection .vertical-titlenext3 {
+                margin-top: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 60px;
+                color: white;
+                background-color: black;
+            }
+
+            .secondsection .vertical-titlenext4 {
+                margin-top: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 60px;
+                color: white;
+                background-color: black;
+
+            }
+
+            .secondsection .vertical-titlenext2 {
+                padding-top: 10px;
+                padding-left: 60px;
+                color: white;
+                background-color: black;
+                padding-bottom: 10px;
+            }
+
+            .secondsection .vertical-desc {
+
+                padding-left: 100px;
+                color: bisque;
+            }
+
+            .secondsection .vertical-descnext {
+
+                padding-left: 100px;
+                color: bisque;
+            }
+
+            .secondsection .vertical-descnext2 {
+
+                padding-left: 100px;
+                color: bisque;
+            }
+
+            .secondsection .vertical-descnext3 {
+
+                padding-left: 100px;
+                color: bisque;
+            }
+
+            .secondsection .vertical-descnext4 {
+
+                padding-left: 100px;
+                color: bisque;
+            }
+
+
+            nav ul li a {
+                color: rgb(107, 17, 17);
+                font-size: 10px;
+
+
+
+            }
+
+            .btn {
+                size: 20px;
+                align-items: center;
+            }
+
+            .left {
+                color: black;
+            }
+
+            .leftsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                margin-left: -10px;
+            }
+
+            #element {
+                margin-left: 70px;
+                align-self: center;
+                font-size: 20px;
+            }
+
+            .secondsection>h1 {
+                margin-left: -20px;
+
+            }
+
+            .secondsection .box {
+                margin-top: 40px;
+            }
+
+            .secondsection .vertical {
+                margin-left: 30px;
+            }
+
+            .firstsection>div {
+                width: 100%;
+            }
+            nav ul{
+                align-items: center;
+            }
+
+            nav ul li {
+                list-style: none;
+                margin: 0 10px;
+            }
+        }
+
+        @media screen and (max-width: 280px) {
+            body {
+                background-color: rgb(86, 3, 3);
+            }
+
+            .firstsection {
+                flex-direction: column-reverse;
+                margin-right: -61px;
+
+            }
+
+
+            footer {
+                display: none;
+            }
+
+            .box {
+                flex-direction: column;
+
+            }
+
+            .secondsection .box {
+                width: 50vw;
+            }
+
+            
+
+            nav ul li {
+                list-style: none;
+                margin: 0 10px;
+            }
+
+            nav {
+                flex-direction: column;
+                width: 122%;
+                background-color: bisque;
+                
+            }
+
+            .secondsection .vertical {
+                height: unset;
+            }
+
+            .secondsection .img-top {
+                display: none;
+            }
+
+            .secondsection .img-next {
+                display: none;
+            }
+
+            .secondsection .img-next2 {
+                display: none;
+            }
+
+            .secondsection .img-next3 {
+                display: none;
+            }
+
+            .secondsection .img-next4 {
+                display: none;
+            }
+
+            .secondsection .vertical-title {
+                margin-top: 30px;
+                padding-top: 10px;
+                padding-left: 60px;
+                padding-bottom: 10px;
+                color: white;
+                background-color: black;
+            }
+
+            .secondsection .vertical-titlenext {
+                margin-top: 120px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 60px;
+                color: white;
+                background-color: black;
+            }
+
+            .secondsection .vertical-titlenext3 {
+                margin-top: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 60px;
+                color: white;
+                background-color: black;
+            }
+
+            .secondsection .vertical-titlenext4 {
+                margin-top: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 60px;
+                color: white;
+                background-color: black;
+
+            }
+
+            .secondsection .vertical-titlenext2 {
+                padding-top: 10px;
+                padding-left: 60px;
+                color: white;
+                background-color: black;
+                padding-bottom: 10px;
+            }
+
+            .secondsection .vertical-desc {
+
+                padding-left: 100px;
+                color: bisque;
+            }
+
+            .secondsection .vertical-descnext {
+
+                padding-left: 100px;
+                color: bisque;
+            }
+
+            .secondsection .vertical-descnext2 {
+
+                padding-left: 100px;
+                color: bisque;
+            }
+
+            .secondsection .vertical-descnext3 {
+
+                padding-left: 100px;
+                color: bisque;
+            }
+
+            .secondsection .vertical-descnext4 {
+
+                padding-left: 100px;
+                color: bisque;
+            }
+
+            
+            nav ul li a {
+                color: rgb(107, 17, 17);
+                font-size: 7px;
+
+
+
+
+            }
+
+            .leftsection .btn {
+                font-size: small;
+                align-items: right;
+                display: flexbox;
+            }
+
+            .left {
+                color: black;
+            }
+
+            .leftsection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                margin-left: -10px;
+            }
+
+            #element {
+                margin-left: 45px;
+                align-self: center;
+                font-size: 20px;
+            }
+
+            .secondsection>h1 {
+                margin-left: -20px;
+
+            }
+
+            .secondsection .box {
+                margin-top: 40px;
+            }
+
+            .secondsection .vertical {
+                margin-left: 30px;
+            }
+
+            .firstsection>div {
+                width: 100%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"
+                style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Bahnikana's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <h1 style="color:rgb(90, 12, 12)"><b>Hi!</b></h1>
+                <div>my name is <h4 style="color:rgb(61, 8, 8)">
+                        Bahnikana</h4>
+                </div>
+                <div>and I am a</div>
+                <div>
+                    <h4
+                        style="color:rgb(61, 8, 8);font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; align-content: center;">
+                        <span id="element"></span>
+                    </h4>
+                    <div class="button">
+                        <button class="btn"><a style="text-decoration:none; color: white" href="https://www.linkedin.com/in/bahnikana-biswas-923380241/details/projects/">Download Resume</a>
+
+                        </button>
+                        <button class="btn"><a style="text-decoration:none; color: white" href="https://github.com/Bahnikana?tab=repositories">Visit Github</a></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="C:\Users\KIIT\Downloads\pngwing.com.png">
+            </div>
+        </section>
+        <h4 style="color:white; font-size: large;margin-left: 60px; font-family: Arial, Helvetica, sans-serif;"><span
+                id="hello"></span></h4>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1 style="background-color: rgb(0, 0, 0); margin-top: 10px; margin-bottom: 10px;">Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="img-top" src="C:\Users\KIIT\Downloads\pngaaa.com-950292.png">
+                    <div class="vertical-title">
+                        AISSE- 97% (2018-2019)
+                    </div>
+                    <div class="vertical-desc">
+                        Passed my class 10th CBSE Board examination with a percentage of 97% <br> and a 100 percent
+                        marks in Information Technology
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-next" src="C:\Users\KIIT\Downloads\pngaaa.com-4523520.png">
+                    <div class="vertical-titlenext">
+                        AISSCE- 92% (2020-2021)
+
+                    </div>
+                    <div class="vertical-descnext">
+                        Passed my class 12th CBSE Board examination with a percentage of 92% <br> with specialization in
+                        python and database
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-next2"
+                        src="C:\Users\KIIT\Downloads\Lovepik_com-611628206-a green cartoon plant.png">
+                    <div class="vertical-titlenext2">
+                        B.Tech - KIIT University (2021-2025)
+
+                    </div>
+                    <div class="vertical-descnext2">
+                        currently persuing my B.Tech Degree in Computer Science and Engineering and holds a CGPA of 8.88
+                        at the end of Second Year with an SGPA of 9.23 in fourth semester
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-next2"
+                        src="C:\Users\KIIT\Downloads\kisspng-drawing-cartoon-tree-clip-art-tree-lined-5ada5073e59021.7837122315242568839403.png">
+                    <div class="vertical-titlenext3">
+                        Skilled in multi-programing language
+
+                    </div>
+                    <div class="vertical-descnext3">
+                        Skilled in Python, Oracle, C++, C, Java, HTML, CSS, BASH and has a good knowledge of Data
+                        Structure and Algorithms
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-next3" src="C:\Users\KIIT\Downloads\NicePng_autumn-tree-png_1658022.png">
+                    <div class="vertical-titlenext3">
+                        Coding Contest and Practices
+
+                    </div>
+                    <div class="vertical-descnext3">
+                        Improving skills in coding through problem solving from Leetcode and Spoj
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="img-next3" src="C:\Users\KIIT\Downloads\clipart2283058.png">
+                    <div class="vertical-titlenext4">
+                        Professional Certificate
+
+                    </div>
+                    <div class="vertical-descnext4">
+                        Certified in Machine Learning and Full Stack Development courses
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h4 style=" margin-top: 10px; color: rgb(183, 214, 7);">Bahnikana's Developer Portfolio</h4>
+            </div>
+            <div class="footer-second"></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact</a></li>
+
+            </ul>
+            <div class="footer-third"></div>
+            <ul>
+                <li><a href="/">Blogs</a></li>
+                <li><a href="/">Photography</a></li>
+                <li><a href="/">Write ups</a></li>
+                <li><a href="/">Arts</a></li>
+            </ul>
+            <div class="footer-fourth"></div>
+            <ul>
+                <li><a href="/">Acievements</a></li>
+                <li><a href="/">Sign up</a></li>
+                <li><a href="/">Sign in</a></li>
+            </ul>
+        </div>
+        <div class="footer-rights">
+            www.bahnikanasportfolio.com | All rights reserved ®
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Video Editor.', 'Graphic Designer.', 'Web Designer.', 'Coder.', 'Web Developer.'],
+            typeSpeed: 70,
+        });
+    </script>
+    <script>
+        var typed = new Typed('#hello', {
+            strings: ['Welcome to my Web Page.', 'This is your Home Page.'],
+            typeSpeed: 70,
+        });
+    </script>
+
+</body>
+
+</html>
